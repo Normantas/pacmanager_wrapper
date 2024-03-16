@@ -5,6 +5,7 @@ A utility to interact with any package manager on any Linux distro
 Currently supported:
  - Apt
  - Yum
+ - Pacman
 
 ## Example
 Taken from `examples/install.rs`
