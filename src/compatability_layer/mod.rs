@@ -4,6 +4,7 @@ use crate::{error::PacManagerError, pacmanager_exec, PacManager, PacManagerActio
 
 mod apt;
 mod yum;
+mod pacman;
 
 /// Executes the specified action.
 /// Returns a `Child` object to the pacmanager's process.
@@ -14,6 +15,7 @@ pub async fn execute_action(
     let pacmanager_command = match pacmanager {
         PacManager::Apt => apt::get_command(action.clone()),
         PacManager::Yum => yum::get_command(action.clone()),
+        PacManager::Pacman => pacman::get_command(action.clone()),
     };
 
     let output = pacmanager_exec::execute_command(

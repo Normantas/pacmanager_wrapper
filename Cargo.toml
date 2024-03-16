@@ -2,6 +2,7 @@
 name = "pacmanager_wrapper"
 version = "0.1.0"
 description = "A utility to interact with any package manager on any Linux distro"
+repository = "https://github.com/Normantas/pacmanager"
 categories = ["api-bindings"]
 keywords = ["linux", "bindings"]
 license = "MIT"

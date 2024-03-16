@@ -54,6 +54,7 @@ pub type Package = String;
 pub enum PacManager {
     Apt,
     Yum,
+    Pacman,
 }
 
 /// The specific command to execute - "install", "update", etc.

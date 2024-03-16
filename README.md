@@ -1,4 +1,4 @@
-# PacManager - A universal library for managing packages
+# `pacmanager_wrapper` - A universal library for managing packages
 A utility to interact with any package manager on any Linux distro
 
 ## Package manager support
