@@ -1,5 +1,5 @@
 # PacManager - A universal library for managing packages
-Allows you to execute package manager commands on any Linux distro
+A utility to interact with any package manager on any Linux distro
 
 ## Package manager support
 Currently supported:
