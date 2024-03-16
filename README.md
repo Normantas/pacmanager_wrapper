@@ -1,3 +1,9 @@
+# PacManager - A universal library for managing packages
+Allows you to execute package manager commands on any Linux distro
+
+## Example
+Taken from `examples/install.rs`
+```
 use pacmanager_wrapper::{execute_action, PacManagerAction, PacManagerCommand};
 use futures_lite::{io::BufReader, prelude::*};
 
@@ -15,8 +21,9 @@ async fn main() {
     let mut child = execute_action(action, pacmanager_wrapper::PacManager::Apt).await.unwrap();
     let mut lines = BufReader::new(child.stdout.take().unwrap()).lines();
 
-    // Print out the PacManager's stdout
+    // Print out the pacmanager's stdout
     while let Some(line) = lines.next().await {
         println!("{}", line.unwrap());
     }
 }
+```
