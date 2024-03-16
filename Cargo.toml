@@ -1,0 +1,15 @@
+[package]
+name = "pacmanager_wrapper"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-process = "2.1.0"
+thiserror = "1.0.58"
+
+# For the examples
+[dev-dependencies]
+futures-lite = "2.2.0"
+tokio = { version = "1.36.0", features = ["macros", "rt-multi-thread"] }
