@@ -53,6 +53,7 @@ pub type Package = String;
 /// The package manager to use
 pub enum PacManager {
     Apt,
+    Apk,
     Yum,
     Pacman,
 }

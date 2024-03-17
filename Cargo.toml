@@ -1,6 +1,6 @@
 [package]
 name = "pacmanager_wrapper"
-version = "0.1.1"
+version = "0.2.0"
 description = "A utility to interact with any package manager on any Linux distro"
 repository = "https://github.com/Normantas/pacmanager_wrapper"
 categories = ["api-bindings"]

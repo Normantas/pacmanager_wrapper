@@ -4,6 +4,7 @@ A utility to interact with any package manager on any Linux distro
 ## Package manager support
 Currently supported:
  - Apt
+ - Apk
  - Yum
  - Pacman
 

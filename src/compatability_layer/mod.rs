@@ -3,6 +3,7 @@ use async_process::Child;
 use crate::{error::PacManagerError, pacmanager_exec, PacManager, PacManagerAction};
 
 mod apt;
+mod apk;
 mod yum;
 mod pacman;
 
@@ -14,6 +15,7 @@ pub async fn execute_action(
 ) -> Result<Child, PacManagerError> {
     let pacmanager_command = match pacmanager {
         PacManager::Apt => apt::get_command(action.clone()),
+        PacManager::Apk => apk::get_command(action.clone())?,
         PacManager::Yum => yum::get_command(action.clone()),
         PacManager::Pacman => pacman::get_command(action.clone()),
     };
